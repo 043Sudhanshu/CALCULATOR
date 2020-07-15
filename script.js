@@ -53,7 +53,8 @@ for(var i=0;i<buttons.length;i++)
 
     else if(type=='='){
     op2=parseFloat(display.textContent);
-    display.innerHTML=eval(op1+operator+op2);    
+    display.innerHTML=eval(op1+operator+op2);   
+    op1="";
 }
     else{
         display.innerText=display.innerText+type;
